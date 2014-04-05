@@ -46,7 +46,7 @@
 		763BC2F418D24CA9009F4B63 /* E-linkapp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "E-linkapp-Prefix.pch"; sourceTree = "<group>"; };
 		763BC2F518D24CA9009F4B63 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		763BC2F618D24CA9009F4B63 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		763BC2F918D24CA9009F4B63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		763BC2F918D24CA9009F4B63 /* Base */ = {isa = PBXFileReference; explicitFileType = image.png; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		763BC2FC18D24CA9009F4B63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
 		763BC2FE18D24CA9009F4B63 /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
 		763BC2FF18D24CA9009F4B63 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
@@ -207,6 +207,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Primate & Partners AB";
 				TargetAttributes = {
+					763BC2E218D24CA9009F4B63 = {
+						DevelopmentTeam = E93D6HY2GE;
+					};
 					763BC30918D24CA9009F4B63 = {
 						TestTargetID = 763BC2E218D24CA9009F4B63;
 					};
@@ -398,10 +401,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "E-linkapp/E-linkapp-Prefix.pch";
 				INFOPLIST_FILE = "E-linkapp/E-linkapp-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -411,10 +417,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "E-linkapp/E-linkapp-Prefix.pch";
 				INFOPLIST_FILE = "E-linkapp/E-linkapp-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -480,6 +489,7 @@
 				763BC31D18D24CA9009F4B63 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		763BC31E18D24CA9009F4B63 /* Build configuration list for PBXNativeTarget "E-linkappTests" */ = {
 			isa = XCConfigurationList;
@@ -488,6 +498,7 @@
 				763BC32018D24CA9009F4B63 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
